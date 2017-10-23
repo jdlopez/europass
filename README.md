@@ -8,9 +8,9 @@ Maven plugin to convert json schema to pojos:
 
 https://github.com/joelittlejohn/jsonschema2pojo
 
-## Goals
+## Goals and change log
 
-* 
+[changelog](CHANGELOG.md)
 
 ## Documentation and links
 

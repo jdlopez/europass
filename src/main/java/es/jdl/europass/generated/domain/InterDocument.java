@@ -20,17 +20,17 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class InterDocument {
 
     @JsonProperty("ref")
-    private DocumentInfo.DocumentType ref;
+    private es.jdl.europass.generated.domain.DocumentInfo.DocumentType ref;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("ref")
-    public DocumentInfo.DocumentType getRef() {
+    public es.jdl.europass.generated.domain.DocumentInfo.DocumentType getRef() {
         return ref;
     }
 
     @JsonProperty("ref")
-    public void setRef(DocumentInfo.DocumentType ref) {
+    public void setRef(es.jdl.europass.generated.domain.DocumentInfo.DocumentType ref) {
         this.ref = ref;
     }
 
