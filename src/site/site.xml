@@ -1,0 +1,30 @@
+<project 
+    xmlns="http://maven.apache.org/DECORATION/1.6.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/DECORATION/1.6.0 http://maven.apache.org/xsd/decoration-1.6.0.xsd"
+    name="Europass">
+
+    <bannerLeft>
+        <name>Europass WebApp</name>
+        <!--
+        <src>images/europass.png</src>
+        <href>http://???/</href>
+        -->
+    </bannerLeft>
+    <body>
+        <menu name="Motorsede">
+            <item name="Inicio" href="index.html"/>
+            <item name="ReadMe" href="README.html"/>
+            <item name="Persistence" href="PERSISTENCE.html"/>
+            <item name="Services layer" href="SERVICES.html" />
+            <item name="Presentation layer" href="LAYOUT.html"/>
+        </menu>
+        <menu ref="reports"/>
+    </body>
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.4</version>
+    </skin>
+
+</project>
