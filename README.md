@@ -38,3 +38,17 @@ http://interop.europass.cedefop.europa.eu/data-model/xml-resources/v3.3.0/schema
 ## to study
 
 https://github.github.com/maven-plugins/site-plugin/
+
+## skills tree tech
+https://www.thebalance.com/list-of-information-technology-it-skills-2062410
+https://www.monster.com/career-advice/article/computer-skills-resume
+https://ec.europa.eu/esco/portal/occupation
+
+## external systems to connect
+https://developer.infojobs.net/documentation/operation-list/index.xhtml
+https://developer.linkedin.com/docs/guide/v2/jobs
+
+https://developers.facebook.com/docs/graph-api/reference/v2.12/post
+
+https://projects.spring.io/spring-social/
+https://github.com/magott/spring-social-yammer

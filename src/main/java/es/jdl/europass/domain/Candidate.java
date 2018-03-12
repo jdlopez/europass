@@ -16,6 +16,11 @@ public class Candidate {
     private Date creationDate;
     private String user;
 
+    public String getFullName() {
+        // fill from CV?
+        return null;
+    }
+
     public String getId() {
         return id;
     }
