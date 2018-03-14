@@ -5,8 +5,7 @@ import java.util.Date;
 public class JobApplication {
     private String id;
     private Position position;
-    private Employee innerApplicant;
-    private Candidate candidate;
+    private JobApplicant applicant;
     private String interview;
     private String techAssessment;
     private Date submitDate;
@@ -27,22 +26,6 @@ public class JobApplication {
 
     public void setPosition(Position position) {
         this.position = position;
-    }
-
-    public Employee getInnerApplicant() {
-        return innerApplicant;
-    }
-
-    public void setInnerApplicant(Employee innerApplicant) {
-        this.innerApplicant = innerApplicant;
-    }
-
-    public Candidate getCandidate() {
-        return candidate;
-    }
-
-    public void setCandidate(Candidate candidate) {
-        this.candidate = candidate;
     }
 
     public String getInterview() {
@@ -83,5 +66,13 @@ public class JobApplication {
 
     public String getAplicantComments() {
         return aplicantComments;
+    }
+
+    public JobApplicant getApplicant() {
+        return applicant;
+    }
+
+    public void setApplicant(JobApplicant applicant) {
+        this.applicant = applicant;
     }
 }

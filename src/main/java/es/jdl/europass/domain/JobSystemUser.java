@@ -16,6 +16,13 @@ public class JobSystemUser {
             return candidate.getFullName();
     }
 
+    public JobApplicant getJobApplicant() {
+        if (isInternal())
+            return employee;
+        else
+            return candidate;
+    }
+
     public Employee getEmployee() {
         return employee;
     }

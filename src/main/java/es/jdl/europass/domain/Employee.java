@@ -1,23 +1,21 @@
 package es.jdl.europass.domain;
 
+import org.springframework.data.annotation.Id;
+
 /**
- *
+ * Employee model. Only to CV consideration
  */
-public class Employee {
+public class Employee extends JobApplicant {
+
     // external data
+    @Id
     private String employeeId;
+    private String employeeName;
     private String companyName;
     private String office;
     private String postion;
     private String corporateEmail;
     private String corporatePhone;
-    // app data
-    private Curriculum cv;
-
-    public String getFullName() {
-        // fill from CV?
-        return null;
-    }
 
     public String getEmployeeId() {
         return employeeId;
@@ -25,6 +23,14 @@ public class Employee {
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
     public String getCompanyName() {
@@ -67,11 +73,4 @@ public class Employee {
         this.corporatePhone = corporatePhone;
     }
 
-    public Curriculum getCv() {
-        return cv;
-    }
-
-    public void setCv(Curriculum cv) {
-        this.cv = cv;
-    }
 }

@@ -7,19 +7,13 @@ import java.util.Date;
 /**
  * Candidate model
  */
-public class Candidate {
+public class Candidate extends JobApplicant {
 
     @Id
     private String id;
-    private Curriculum cv;
     private String source;
     private Date creationDate;
     private String user;
-
-    public String getFullName() {
-        // fill from CV?
-        return null;
-    }
 
     public String getId() {
         return id;
@@ -27,14 +21,6 @@ public class Candidate {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public Curriculum getCv() {
-        return cv;
-    }
-
-    public void setCv(Curriculum cv) {
-        this.cv = cv;
     }
 
     public String getSource() {

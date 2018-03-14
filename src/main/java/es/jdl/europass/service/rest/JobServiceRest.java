@@ -35,10 +35,7 @@ public class JobServiceRest {
         if (position == null)
             throw new NotFoundRestException("position", id);
         JobApplication application = new JobApplication();
-        if (user.isInternal())
-            application.setInnerApplicant(user.getEmployee());
-        else
-            application.setCandidate(user.getCandidate());
+        application.setApplicant(user.getJobApplicant());
         application.setPosition(position);
         application.setAplicantComments(comments);
         application.setSubmitDate(new Date());

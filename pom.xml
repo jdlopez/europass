@@ -12,6 +12,7 @@
 
     <properties>
         <spring.version>5.0.3.RELEASE</spring.version>
+        <spring-data-mongodb.version>2.0.0.RELEASE</spring-data-mongodb.version>
     </properties>
 
     <dependencies>
@@ -36,23 +37,10 @@
             <version>2.7.5</version>
         </dependency>
         <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
-            <version>2.0.0.RELEASE</version>
+            <version>${spring-data-mongodb.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-maven-plugin</artifactId>
-            <version>9.4.7.v20170914</version>
-        </dependency>
-        -->
-
 
     </dependencies>
 
@@ -66,6 +54,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
@@ -83,6 +72,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -96,11 +86,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.7.v20170914</version>
             </plugin>
         </plugins>
     </build>
