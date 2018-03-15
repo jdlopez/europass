@@ -5,7 +5,8 @@ package es.jdl.europass.domain;
  * @author jdlopez
  */
 public abstract class JobApplicant {
-    // check polymorphism in mongo
+// check polymorphism in mongo
+// https://stackoverflow.com/questions/14886999/sd-mongodb-polymorphism-in-subdocument
     protected Curriculum cv;
     protected String firstName;
     protected String lastName;

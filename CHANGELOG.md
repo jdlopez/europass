@@ -5,6 +5,11 @@
 - [x] Import CV XML Schema
 - [X] Domain clases (auto-generated plus own)
 - [ ] Principal services (public and HR)
+    - [ ] HR: Publish Job
+    - [ ] PUB: List public jobs
+    - [ ] PUB: Post job application
+    - [ ] PUB: Register user
+    - [ ] HR: Add comments to application
 - [ ] Basic authentication (user/admin) or spring-security
 
 1.0 Release
