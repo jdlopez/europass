@@ -3,7 +3,7 @@
 1.0-SNAPSHOT
 
 - [x] Import CV XML Schema
-- [X] Domain clases (auto-generated plus own)
+- [X] Domain clases (auto-generated plus its own)
 - [ ] Principal services (public and HR)
     - [ ] HR: Publish Job
     - [ ] PUB: List public jobs

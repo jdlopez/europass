@@ -52,3 +52,9 @@ https://developers.facebook.com/docs/graph-api/reference/v2.12/post
 
 https://projects.spring.io/spring-social/
 https://github.com/magott/spring-social-yammer
+
+## deployment
+
+https://github.com/wildfly-swarm/wildfly-swarm-examples/blob/master/spring/spring-data/pom.xml
+https://github.com/heroku/devcenter-mongo-java
+https://devcenter.heroku.com/articles/mongolab
