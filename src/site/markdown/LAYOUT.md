@@ -4,6 +4,14 @@ http://alpacajs.org/
 
 https://datatables.net
 
-Otra vía:
+# vue
 
-https://stackoverflow.com/questions/38532210/how-to-integrate-angular-2-java-maven-web-application
+steps:
+
+    vue create frontend
+    npm i bootstrap-vue
+    
+    
+## static assets
+
+https://github.com/vuejs/vue-cli/blob/dev/docs/assets.md

@@ -54,15 +54,17 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <!--
             <plugin>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
                 <version>0.5.1</version>
                 <configuration>
                     <sourceDirectory>${basedir}/src/main/config/schema</sourceDirectory>
+                    <excludes><exclude>europass-json-schema-v3.3.0.json</exclude></excludes>
                     <targetPackage>es.jdl.europass.generated.domain</targetPackage>
-                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
+                    <outputDirectory>${basedir}/src/main/gen-java</outputDirectory>
+                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>
+                    <includeToString>false</includeToString>
                 </configuration>
                 <executions>
                     <execution>
@@ -72,7 +74,6 @@
                     </execution>
                 </executions>
             </plugin>
-            -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>

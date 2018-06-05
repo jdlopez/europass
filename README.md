@@ -32,6 +32,9 @@ http://interop.europass.cedefop.europa.eu/data-model/xml-resources/
 JSON Schema:
 http://interop.europass.cedefop.europa.eu/data-model/json-resources/v3.3.0/schema/europass-json-schema-v3.3.0.json
 
+https://github.com/jsonresume
+https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+
 Format help:
 http://interop.europass.cedefop.europa.eu/data-model/xml-resources/v3.3.0/schema/europass-xml-schema-doc-v3.3.0.pdf
 
