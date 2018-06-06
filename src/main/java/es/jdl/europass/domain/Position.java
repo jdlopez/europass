@@ -1,6 +1,6 @@
 package es.jdl.europass.domain;
 
-import es.jdl.europass.generated.ComputerSkillType;
+import es.jdl.europass.generated.domain.Skill;
 
 import java.util.Date;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Position {
     private String name;
     private String description;
     private String offering;
-    private List<ComputerSkillType> skills;
+    private List<Skill> skills;
     private Date creationDate;
     private boolean open; // status?-> enum?
     private Date endDate;
@@ -48,11 +48,11 @@ public class Position {
         this.offering = offering;
     }
 
-    public List<ComputerSkillType> getSkills() {
+    public List<Skill> getSkills() {
         return skills;
     }
 
-    public void setSkills(List<ComputerSkillType> skills) {
+    public void setSkills(List<Skill> skills) {
         this.skills = skills;
     }
 
