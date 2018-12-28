@@ -1,6 +1,9 @@
 # Europass
 
-Europass CV application
+Europass CV application. Current status is: frozen until get some continuous time to spend
+
+## Roadmap
+[] Planning and gathering information about CV formats and so on
 
 ## Build
 
