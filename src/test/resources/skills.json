@@ -1,0 +1,29 @@
+[
+  {
+    "id": "manage",
+    "name": "management"
+  },
+  {
+    "id": "net",
+    "name": "networking"
+  },
+  {
+    "id": "sys",
+    "name": "systems"
+  },
+  {
+    "id": "prog",
+    "name": "programming"
+  },
+  {
+    "id": "db",
+    "name": "database",
+    "parent": { "id": "sys" }
+  },
+  {
+    "id": "oracle",
+    "name": "oracle",
+    "parent": { "id": "db" }
+  }
+
+]

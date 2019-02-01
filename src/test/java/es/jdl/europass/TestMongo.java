@@ -10,7 +10,7 @@ public class TestMongo {
         EuropassConfig cfg = new EuropassConfig();
         cfg.init();
         System.out.println("mongocli: " + cfg.mongoClient());
-        for (String n: cfg.mongoClient().listDatabaseNames())
-            System.out.println(n);
+        for (String s: cfg.mongoClient().getDatabase("europass").listCollectionNames())
+            System.out.printf(s);
     }
 }
