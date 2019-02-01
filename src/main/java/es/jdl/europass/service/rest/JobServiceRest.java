@@ -7,7 +7,6 @@ import es.jdl.europass.service.data.JobApplicationRepository;
 import es.jdl.europass.service.data.PositionRepository;
 import es.jdl.europass.service.exception.NotFoundRestException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,12 +29,13 @@ public class JobServiceRest {
     }
 
     @PostMapping("/job/{id}/application")
-    public String sendApplication(@PathVariable("id") String id, @RequestBody String comments, @AuthenticationPrincipal JobSystemUser user) throws NotFoundRestException {
+    public String sendApplication(@PathVariable("id") String id, @RequestBody String comments
+            /*, @AuthenticationPrincipal JobSystemUser user*/) throws NotFoundRestException {
         Position position = positionRepository.findById(id).orElse(null);
         if (position == null)
             throw new NotFoundRestException("position", id);
         JobApplication application = new JobApplication();
-        application.setApplicant(user.getJobApplicant());
+        application.setApplicant(/*user.getJobApplicant()*/null);
         application.setPosition(position);
         application.setAplicantComments(comments);
         application.setSubmitDate(new Date());

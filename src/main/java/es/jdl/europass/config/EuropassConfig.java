@@ -11,15 +11,13 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import javax.annotation.PostConstruct;
 
 @Configuration
-@ComponentScan ("es.jdl.europass.service")
 @EnableMongoRepositories("es.jdl.europass.service.data")
-@EnableWebMvc
 public class EuropassConfig extends AbstractMongoConfiguration {
 
     private MongoClientURI clientURI;
 
     @PostConstruct
-    protected void init() {
+    public void init() {
         // heroku config
         clientURI = new MongoClientURI(System.getenv("MONGODB_URI"));
     }
@@ -27,6 +25,7 @@ public class EuropassConfig extends AbstractMongoConfiguration {
     @Override
     public MongoClient mongoClient() {
         MongoClient client = new MongoClient(clientURI);
+
         clientURI.getDatabase();
         return client;
     }

@@ -64,3 +64,5 @@ https://github.com/magott/spring-social-yammer
 https://github.com/wildfly-swarm/wildfly-swarm-examples/blob/master/spring/spring-data/pom.xml
 https://github.com/heroku/devcenter-mongo-java
 https://devcenter.heroku.com/articles/mongolab
+
+Test deploy: add ENV: MONGODB_URI
