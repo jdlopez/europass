@@ -17,7 +17,15 @@ HR:
 - [x] POST /hr/job
 - [ ] POST /hr/job/<id>/comment
 
-INNER (Ops and so on)
+Metadata:
+
+- [ ] GET /skills
+- [ ] GET /languages
+- [ ] GET /company/countries
+- [ ] GET /company/country/country/ID/cities
+- [ ] GET /skills
+
+INNER (Operation dept and so on)
 
 - [ ] POST /search <- filter.json
 

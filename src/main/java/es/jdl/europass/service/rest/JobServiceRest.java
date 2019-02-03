@@ -1,8 +1,10 @@
 package es.jdl.europass.service.rest;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import es.jdl.europass.domain.EnumStatus;
 import es.jdl.europass.domain.JobApplication;
 import es.jdl.europass.domain.Position;
+import es.jdl.europass.domain.Views;
 import es.jdl.europass.service.data.JobApplicationRepository;
 import es.jdl.europass.service.data.PositionRepository;
 import es.jdl.europass.service.exception.NotFoundRestException;
@@ -26,11 +28,13 @@ public class JobServiceRest {
     @Autowired
     private JobApplicationRepository jobApplicationRepository;
 
+    @JsonView(Views.Public.class)
     @GetMapping("/job/{id}")
     public Position getPositionById(@PathVariable("id") String id) {
         return positionRepository.findById(id).orElse(null);
     }
 
+    @JsonView(Views.Public.class)
     @GetMapping("/jobs")
     public List<Position> findAll() {
         return positionRepository.findByOpenToPublicAndStatus(true, EnumStatus.OPEN);

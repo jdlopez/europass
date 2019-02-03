@@ -11,7 +11,7 @@ public class Candidate extends JobApplicant {
 
     @Id
     private String id;
-    private String source;
+    private EnumSource source;
     private Date creationDate;
     private String user;
 
@@ -23,11 +23,11 @@ public class Candidate extends JobApplicant {
         this.id = id;
     }
 
-    public String getSource() {
+    public EnumSource getSource() {
         return source;
     }
 
-    public void setSource(String source) {
+    public void setSource(EnumSource source) {
         this.source = source;
     }
 

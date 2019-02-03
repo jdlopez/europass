@@ -1,46 +1,20 @@
 # View layout
 
-## vue+bootstrap
+## bootstrap + jquery
 
-steps:
+Use with CDN
 
-    vue create frontend
-    npm i bootstrap-vue
-    
-    
-## static assets
+### public 
 
-<https://github.com/vuejs/vue-cli/blob/dev/docs/assets.md>
+- [ ] public jobs (open positions)
+- [ ] my resumee
 
-<https://bootstrap-vue.js.org/docs>
+### private HR
 
-## tasks
+- [ ] positions
+- [ ] create/edit position
+- [ ] applicants
 
-- [ ] /my Current user resume form
-- [ ] /jobs Public job listing
-- [ ] /manage/jobs Job publication and management
-- [ ] /manage/resume Resume (CV) management and search
+Basic meta-data:
 
-[//]: # "REST Services placed at: /api/blablabla"
-
-## Installation/initialization
-
-Commands:
-
-	npm i bootstrap-vue
-	# Ensure vue-cli is installed and up to date
-	npm i -g vue-cli
-	# Initialize a bootstrap project in the directory
-	vue init bootstrap-vue/webpack frontend
-	
-vue init configuration:
-
-> Project name frontend
-> Project description EuroPass frontend application
-> Author JDLopez
-> Vue build standalone
-> Install vue-router? Yes
-> Use ESLint to lint your code? Yes
-> Pick an ESLint preset Standard
-> Setup unit tests with Karma + Mocha? Yes
-> Setup e2e tests with Nightwatch? Yes
+- [ ] skills

@@ -8,6 +8,11 @@ public class SkillType {
     @DBRef
     private SkillType parent;
 
+    /** Includes parent name */
+    public String getFullName() {
+        return (parent!=null?parent.getName()+"- ":"") + name;
+    }
+
     public String getId() {
         return id;
     }

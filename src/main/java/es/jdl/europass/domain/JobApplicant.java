@@ -10,6 +10,8 @@ public abstract class JobApplicant {
     protected Curriculum cv;
     protected String firstName;
     protected String lastName;
+    protected String email;
+    protected String phoneMobile;
 
     public String getFullName() {
         StringBuilder sb = new StringBuilder();
@@ -45,5 +47,21 @@ public abstract class JobApplicant {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneMobile() {
+        return phoneMobile;
+    }
+
+    public void setPhoneMobile(String phoneMobile) {
+        this.phoneMobile = phoneMobile;
     }
 }

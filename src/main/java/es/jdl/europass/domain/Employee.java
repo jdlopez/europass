@@ -10,12 +10,9 @@ public class Employee extends JobApplicant {
     // external data
     @Id
     private String employeeId;
-    private String employeeName;
     private String companyName;
     private String office;
     private String postion;
-    private String corporateEmail;
-    private String corporatePhone;
 
     public String getEmployeeId() {
         return employeeId;
@@ -23,14 +20,6 @@ public class Employee extends JobApplicant {
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
-    }
-
-    public String getEmployeeName() {
-        return employeeName;
-    }
-
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
     }
 
     public String getCompanyName() {
@@ -55,22 +44,6 @@ public class Employee extends JobApplicant {
 
     public void setPostion(String postion) {
         this.postion = postion;
-    }
-
-    public String getCorporateEmail() {
-        return corporateEmail;
-    }
-
-    public void setCorporateEmail(String corporateEmail) {
-        this.corporateEmail = corporateEmail;
-    }
-
-    public String getCorporatePhone() {
-        return corporatePhone;
-    }
-
-    public void setCorporatePhone(String corporatePhone) {
-        this.corporatePhone = corporatePhone;
     }
 
 }
