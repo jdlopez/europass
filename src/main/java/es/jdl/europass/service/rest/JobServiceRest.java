@@ -36,7 +36,7 @@ public class JobServiceRest {
 
     @JsonView(Views.Public.class)
     @GetMapping("/jobs")
-    public List<Position> findAll() {
+    public List<Position> findAllPublic() {
         return positionRepository.findByOpenToPublicAndStatus(true, EnumStatus.OPEN);
     }
 
@@ -67,5 +67,10 @@ public class JobServiceRest {
             positionRepository.save(position);
         }
         return position;
+    }
+
+    @GetMapping("/hr/jobs")
+    public List<Position> findAll() {
+        return positionRepository.findAll();
     }
 }

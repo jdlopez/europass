@@ -26,11 +26,13 @@ public class Position {
     private List<Skill> skills;
     @JsonView(Views.Public.class)
     private Date creationDate;
+    @JsonView(Views.Public.class)
     private Date endDate;
     private Date lastModification;
     private EnumStatus status;
     private boolean openToPublic;
     private String createdBy;
+    private String requestedBy;
     private List<JobApplication> applications;
 
     public String getId() {
@@ -143,5 +145,13 @@ public class Position {
 
     public void setLastModification(Date lastModification) {
         this.lastModification = lastModification;
+    }
+
+    public String getRequestedBy() {
+        return requestedBy;
+    }
+
+    public void setRequestedBy(String requestedBy) {
+        this.requestedBy = requestedBy;
     }
 }
