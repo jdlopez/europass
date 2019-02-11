@@ -4,370 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Starter Template · Bootstrap</title>
 
-    <title>Employee portal - Jobs and resumes</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
     <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <link href="css/europass.css" rel="stylesheet">
   </head>
-
   <body>
+  <div id="menu" w3-include-html="hr/nav.html"></div>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Getronics</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="jobs.html">Public jobs</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="manage-jobs.html">Jobs</a>
-              <a class="dropdown-item" href="manage-resumes.html">Resumes</a>
-              <a class="dropdown-item" href="#">Graphs</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <div class="container unauthenticated">
-              <a class="btn btn-success" href="/login">Login with Google</a>
-            </div>
-            <div class="container authenticated" style="display: none">
-              Logged in as: <span id="user"></span>
-              <div>
-                <button onClick="logout()" class="btn btn-primary">Logout</button>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <!--
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search people</button>
-        </form>
-        -->
-      </div>
-    </nav>
+  <main role="main" class="container">
 
-    <main role="main" class="container">
-      <div class="card card-body">
-        <h4 class="card-title">Identification</h4>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Richard Hendriks">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="label">Label</label>
-            <input type="text" class="form-control" id="label" placeholder="Programmer">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="summary">Summary</label>
-          <textarea class="form-control" id="summary" rows="3">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</textarea>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
-          </div>
-          <input type="email" class="form-control" placeholder="richard.hendriks@gmail.com" aria-label="email" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon2"><i class="fas fa-phone"></i></span>
-          </div>
-          <input type="tel" class="form-control" placeholder="(912) 555-4321" aria-label="phone" aria-describedby="basic-addon2">
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon3">www</span>
-          </div>
-          <input type="url" class="form-control" placeholder="web" aria-label="phone" aria-describedby="basic-addon3">
-        </div>
-        <div class="col-md-6">
-        <a class="btn btn-sm" data-toggle="collapse" href="#collapseAddress" role="button" aria-expanded="false" aria-controls="collapseExample">
-          <i class="fas fa-angle-down"></i> Address
-        </a>
-        </div>
-        <div class="card card-body collapse" id="collapseAddress">
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
-        </div><!-- collapse -->
+  <div class="starter-template">
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  </div>
 
-      </div><!-- identification -->
+</main><!-- /.container -->
 
-      <div class="card card-body col-md-4">
-        <h4 class="card-title">Languages</h4>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="New language..." aria-label="New language...">
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><i class="fas fa-plus-circle"></i></button>
-          </span>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            English
-            <span class="badge badge-primary badge-pill">Native</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Spanish
-            <span class="badge badge-primary badge-pill">Fluent</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            French
-            <span class="badge badge-primary badge-pill">Average</span>
-          </li>
-        </ul>
-      </div><!-- languages -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="js/europass.js"></script>
+  <script>
+      $(document).ready(function() {
+          elmnt = document.getElementsById("menu");
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+              w3IncludeHTML();
 
-      <div class="card card-body">
-        <h4 class="card-title">Education</h4>
-        <div class="form-row">
-          <div class="form-group col-md-2">
-            <!--<label for="name">Type</label>-->
-            <input type="text" class="form-control" id="educationType" placeholder="Education Type">
-          </div>
-          <div class="form-group col-md-3">
-            <!--<label for="label">Area</label>-->
-            <input type="text" class="form-control" id="educationArea" placeholder="Education area">
-          </div>
-          <div class="form-group col-md-3">
-            <!--<label for="name">Institution</label>-->
-            <input type="text" class="form-control" id="educationInstitution" placeholder="Education institution">
-          </div>
-          <div class="form-group col-md-2">
-            <!--<label for="label">Dates</label>-->
-            <input type="text" class="form-control" id="educationDates" placeholder="Education dates">
-          </div>
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><i class="fas fa-plus-circle"></i></button>
-          </span>
-        </div>
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th scope="col">type</th>
-            <th scope="col">area</th>
-            <th scope="col">institution</th>
-            <th scope="col">dates</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">Bachelor</th>
-            <td>Information Technology</td>
-            <td>University of Oklahoma</td>
-            <td>2011-2014</td>
-          </tr>
-          <tr>
-            <th scope="row">Master</th>
-            <td>Business analytics</td>
-            <td>University of Oklahoma</td>
-            <td>2016-2017</td>
-          </tr>
-          <tr>
-            <th scope="row">Certification</th>
-            <td>Java Proficency</td>
-            <td>Sun Microsystems</td>
-            <td>2000</td>
-          </tr>
-          </tbody>
-        </table>
-      </div><!-- education -->
+      }
+  </script>
 
-      <div class="card card-body">
-        <h4 class="card-title">Work</h4>
-        <div class="form-row">
-          <div class="form-group col-md-2">
-            <input type="text" class="form-control" id="workCompany" placeholder="Company">
-          </div>
-          <div class="form-group col-md-3">
-            <input type="text" class="form-control" id="workPosition" placeholder="Position">
-          </div>
-          <div class="form-group col-md-3">
-            <input type="text" class="form-control" id="workStart" placeholder="Start date">
-          </div>
-          <div class="form-group col-md-3">
-            <input type="text" class="form-control" id="workEnd" placeholder="End date">
-          </div>
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><i class="fas fa-plus-circle"></i></button>
-          </span>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-5">
-            <label for="summary">Summary</label>
-            <textarea class="form-control" id="workSummary" rows="3"></textarea>
-          </div>
-
-          <div class="form-group col-md-5">
-            <label for="workSkills">Skills</label>
-            <textarea class="form-control" id="workSkills" rows="3"></textarea>
-          </div>
-        </div>
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th scope="col">company</th>
-            <th scope="col">position</th>
-            <th scope="col">dates</th>
-          </tr>
-          <tr>
-            <th colspan="3">summary</th>
-          </tr>
-          <tr>
-            <th colspan="3">skills</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">Pied Piper</th>
-            <td>CEO/President</td>
-            <td>2013-12-01 2014-12-01</td>
-          </tr>
-          <tr>
-            <td colspan="3">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              Programming <i class="fas fa-angle-double-right"></i> Java<br/>
-              Database <i class="fas fa-angle-double-right"></i> MySql<br/>
-              ApplicationServer <i class="fas fa-angle-double-right"></i> WebLogic<br/>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Hoolie</th>
-            <td>Programmer</td>
-            <td>2012-12-01 2013-12-01</td>
-          </tr>
-          <tr>
-            <td colspan="3">Bla bla bla some interesting facts about my work at Hoolie. No way, I spent most of the time playing games and hanging out with my colleagues</td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              Programming <i class="fas fa-angle-double-right"></i> Java<br/>
-              Database <i class="fas fa-angle-double-right"></i> MySql<br/>
-              ApplicationServer <i class="fas fa-angle-double-right"></i> WebLogic<br/>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">McDonalds Company</th>
-            <td>Programmer</td>
-            <td>2011-12-01 2012-12-01</td>
-          </tr>
-          <tr>
-            <td colspan="3">Manteinance functions. Backups and so on. Very boring. Really boring. Taking as many naps as I could</td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              Database <i class="fas fa-angle-double-right"></i> MySql<br/>
-              Storage <i class="fas fa-angle-double-right"></i> NAS<br/>
-              Servers <i class="fas fa-angle-double-right"></i> Linux<br/>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">University of Oklahoma</th>
-            <td>Intern</td>
-            <td>2010-12-01 2011-12-01</td>
-          </tr>
-          <tr>
-            <td colspan="3">Some nasty stuff for many departments. Yes it includes making coffe indeed I made a great coffe.</td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              Programming <i class="fas fa-angle-double-right"></i> Java<br/>
-              Database <i class="fas fa-angle-double-right"></i> MySql<br/>
-              ApplicationServer <i class="fas fa-angle-double-right"></i> Tomcat<br/>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div><!-- work -->
-
-      <div class="card card-body col-md-6">
-        <h4 class="card-title">Skills</h4>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="New skill (autocomplete)..." aria-label="New language...">
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><i class="fas fa-plus-circle"></i></button>
-          </span>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Programming <i class="fas fa-angle-double-right"></i> Java
-            <span class="badge badge-primary badge-pill">Expert</span>
-            <span class="badge badge-secondary badge-pill">36 months</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Database <i class="fas fa-angle-double-right"></i> Oracle
-            <span class="badge badge-primary badge-pill">Expert</span>
-            <span class="badge badge-secondary badge-pill">36 months</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            ApplicationServers <i class="fas fa-angle-double-right"></i> WebLogic
-            <span class="badge badge-primary badge-pill">Advanced</span>
-            <span class="badge badge-secondary badge-pill">24 months</span>
-          </li>
-        </ul>
-      </div><!-- skills -->
-    </main>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
-    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-    <!--<script src="assets/js/vendor/popper.min.js"></script>-->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <script type="application/javascript">
-        $( document ).ready(function() {
-            $.get("/user", function (data) {
-                console.log(data);
-                $("#user").html(data.userAuthentication.details.name);
-                $(".unauthenticated").hide();
-                $(".authenticated").show();
-            });
-            var logout = function () {
-                $.post("/logout", function () {
-                    $("#user").html('');
-                    $(".unauthenticated").show();
-                    $(".authenticated").hide();
-                })
-                return true;
-            }
-        });
-    </script>
-  </body>
 </html>

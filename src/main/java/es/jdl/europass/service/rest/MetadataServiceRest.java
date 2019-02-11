@@ -108,4 +108,9 @@ public class MetadataServiceRest {
     public void deleteOffice(@PathVariable String id) {
         officeRepository.deleteById(id);
     }
+
+    @GetMapping("/hr/offices")
+    public List<Office> getOffices() {
+        return officeRepository.findAll();
+    }
 }
