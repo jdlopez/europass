@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-	xmlns:isco88com="http://europass.cedefop.europa.eu/ISCO/88/COM" 
-	xmlns="http://europass.cedefop.europa.eu/Europass" 
-	targetNamespace="http://europass.cedefop.europa.eu/Europass"
-	elementFormDefault="qualified">
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns="http://europass.cedefop.europa.eu/Europass"
+        targetNamespace="http://europass.cedefop.europa.eu/Europass"
+        elementFormDefault="qualified">
 	
 	<!--
 	   /*
