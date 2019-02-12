@@ -8,7 +8,7 @@ import java.security.Principal;
 @RestController
 public class ProfileServiceRest {
     
-    @RequestMapping("/user")
+    @RequestMapping("/profile")
     public Principal user(Principal principal) {
         return principal;
     }
