@@ -1,0 +1,21 @@
+{ jobs: [
+{
+name: 'Un trabajo chulo de verdad',
+locationCountry: 'ES',
+locationCity: 'Madrid',
+createdDate: '2019-01-08'
+},
+{
+name: 'Un trabajo corriente',
+locationCountry: 'ES',
+locationCity: 'Barcelona',
+createdDate: '2019-01-18'
+},
+{
+name: 'Deshollinador en Londres',
+locationCountry: 'GB',
+locationCity: 'London',
+createdDate: '2019-02-08'
+}
+]
+}

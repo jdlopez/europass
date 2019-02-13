@@ -1,5 +1,23 @@
 const Home = {
-  template: '<div>Jumbotron!!</div>'
+	template: `
+	<h2>Public jobs</h2>
+	<b-table striped hover :items="jobs"></b-table>
+	`,
+	created() {
+		this.$http.get('data/publicjobs.json', {responseType: 'json'}).then(response => {
+			console.log("pub jobs: " + JSON.stringify(response));
+			this.jobs = response;
+	  }, response => {
+		// error callback
+		console.log('error reading jobs: ' + response.body);
+	  });
+
+	},
+	data: function () {
+    return {
+      jobs: []
+    }
+  },
 }
 
 const HRJobs = {
@@ -27,7 +45,10 @@ const app = new Vue({
     data: {
         profile: {
             name: '',
-            isHR: false
+			roles: [],
+            isHR() {
+				return roles.indexOf('HR') > -1
+			}
         }
     },
 	created () {
@@ -35,9 +56,9 @@ const app = new Vue({
 	},
     methods: {
         fetchProfile() {
-			this.$http.get('/profile').then(response => {
-
-				this.profile = response.body;
+			this.$http.get('data/profile.json', {responseType: 'json'}).then(response => {
+				console.log("profile: " + JSON.stringify(response));
+				this.profile = response;
 
 			  }, response => {
 				// error callback

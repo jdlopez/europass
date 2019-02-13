@@ -41,11 +41,12 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
 
-        <b-nav-item-dropdown right>
-          <!-- Using button-content slot -->
+        <b-nav-item-dropdown text="User" right>
+          <!-- Using button-content slot 
           <template slot="button-content">
-            <em>{{profile.name}}</em>
+            <em>{{profile!=null.name}}</em>
           </template>
+		  -->
           <b-dropdown-item href="/profile">Profile</b-dropdown-item>
           <b-dropdown-item href="#">Signout</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -54,15 +55,8 @@
     </b-collapse>
   </b-navbar>
 
-  <!-- navbar-1.vue -->
-
   <main role="main" class="container">
-
-    <div class="starter-template">
-      <h1>Bootstrap starter template</h1>
       <router-view></router-view>
-    </div>
-
   </main><!-- /.container -->
 </div>
 
