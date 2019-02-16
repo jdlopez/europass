@@ -99,6 +99,15 @@ public class MetadataServiceRest {
         return ret;
     }
 
+    @GetMapping("/company/cities")
+    public List<String> getCompanyAllCities() {
+        ArrayList<String> ret = new ArrayList<>();
+        for (Office o : officeRepository.findAll())
+            if (!ret.contains(o.getCity()))
+                ret.add(o.getCity());
+        return ret;
+    }
+
     @PostMapping("/hr/office")
     public Office saveOffice(@RequestBody Office office) {
         return officeRepository.save(office);

@@ -56,6 +56,11 @@ public class JobServiceRest {
         return application.getId();
     }
 
+    @GetMapping("/hr/job/{id}")
+    public Position getPositionHRById(@PathVariable("id") String id) {
+        return positionRepository.findById(id).orElse(null);
+    }
+
     @PostMapping("/hr/job")
     public Position createPosition(@RequestBody @Valid Position position, HttpServletRequest request) { /*, @AuthenticationPrincipal JobSystemUser user*/
         if (position.getId() == null) {
