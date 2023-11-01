@@ -1,0 +1,109 @@
+{
+  "basics" : {
+    "name" : null,
+    "label" : null,
+    "image" : null,
+    "email" : null,
+    "phone" : null,
+    "url" : null,
+    "summary" : null,
+    "location" : null,
+    "profiles" : [ ],
+"    "additionalProperties" : { }
+  },
+  "work" : [ {
+    "name" : null,
+    "location" : null,
+    "description" : null,
+    "position" : null,
+    "url" : null,
+    "startDate" : null,
+    "endDate" : null,
+    "summary" : null,
+    "highlights" : [ ],
+"    "additionalProperties" : { }
+  } ],
+  "volunteer" : [ {
+    "organization" : null,
+    "position" : null,
+    "url" : null,
+    "startDate" : null,
+    "endDate" : null,
+    "summary" : null,
+    "highlights" : [ ],
+"    "additionalProperties" : { }
+  } ],
+  "education" : [ {
+    "institution" : null,
+    "url" : null,
+    "area" : null,
+    "studyType" : null,
+    "startDate" : null,
+    "endDate" : null,
+    "score" : null,
+    "courses" : [ ],
+"    "additionalProperties" : { }
+  } ],
+  "awards" : [ {
+    "title" : null,
+    "date" : null,
+    "awarder" : null,
+    "summary" : null,
+"    "additionalProperties" : { }
+  } ],
+  "certificates" : [ {
+    "name" : null,
+    "date" : null,
+    "url" : null,
+    "issuer" : null,
+"    "additionalProperties" : { }
+  } ],
+  "publications" : [ {
+    "name" : null,
+    "publisher" : null,
+    "releaseDate" : null,
+    "url" : null,
+    "summary" : null,
+"    "additionalProperties" : { }
+  } ],
+  "skills" : [ {
+    "name" : null,
+    "level" : null,
+    "keywords" : [ ],
+"    "additionalProperties" : { }
+  } ],
+  "languages" : [ {
+    "language" : null,
+    "fluency" : null,
+"    "additionalProperties" : { }
+  } ],
+  "interests" : [ {
+    "name" : null,
+    "keywords" : [ ],
+"    "additionalProperties" : { }
+  } ],
+  "references" : [ {
+    "name" : null,
+    "reference" : null,
+"    "additionalProperties" : { }
+  } ],
+  "projects" : [ {
+    "name" : null,
+    "description" : null,
+    "highlights" : [ ],
+    "keywords" : [ ],
+    "startDate" : null,
+    "endDate" : null,
+    "url" : null,
+    "roles" : [ ],
+    "entity" : null,
+    "type" : null,
+"    "additionalProperties" : { }
+  } ],
+  "meta" : {
+    "canonical" : null,
+    "version" : null,
+    "lastModified" : null,
+"    "additionalProperties" : { }
+  }
+}

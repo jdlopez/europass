@@ -1,0 +1,12 @@
+[
+  { "name": "Spanish", "iso":"es" },
+  { "name": "Galician", "iso":"gl"},
+  { "name": "Catalan", "iso":"ca"},
+  { "name": "Basque", "iso":"eu"},
+  { "name": "English", "iso":"en" },
+  { "name": "Portuguese", "iso":"pt"},
+  { "name": "Chinese", "iso":"zh"},
+  { "name": "French", "iso":"fr"},
+  { "name": "German", "iso":"de"},
+  { "name": "Italian", "iso":"it"}
+]
