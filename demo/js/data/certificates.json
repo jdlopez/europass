@@ -1,0 +1,11 @@
+[
+  {"name":  "Scrum Master", "issuer":  "Starfleet Science Academy"},
+  {"name":  "Scrum Product owner", "issuer":  "Starfleet Science Academy"},
+  {"name":  "B1 Business Preliminary", "issuer":  "University of Cambridge"},
+  {"name":  "B2 Business Vantage", "issuer":  "University of Cambridge"},
+  {"name":  "C1 Business Higher", "issuer":  "University of Cambridge"},
+  {"name":  "B1 Preliminary", "issuer":  "University of Cambridge"},
+  {"name":  "B2 First", "issuer":  "University of Cambridge"},
+  {"name":  "C1 Advanced", "issuer":  "University of Cambridge"},
+  {"name":  "C2 Proficiency", "issuer":  "University of Cambridge"}
+]

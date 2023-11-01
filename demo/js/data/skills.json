@@ -1,0 +1,20 @@
+[
+  {"name":  "Java Programming", "type":  "technology"},
+  {"name":  "C# Programming", "type":  "technology"},
+  {"name":  "Python Programming", "type":  "technology"},
+  {"name":  "PHP Programming", "type":  "technology"},
+  {"name":  "SQL Programming", "type":  "technology"},
+  {"name":  "JavaScript Programming", "type":  "technology"},
+  {"name":  "Linux administration", "type":  "technology"},
+  {"name":  "Web Logic configuration", "type":  "technology"},
+  {"name":  "Scrum", "type":  "management"},
+  {"name":  "Eclipse", "type":  "tool"},
+  {"name":  "VS Code", "type":  "tool"},
+  {"name":  "JIRA", "type":  "tool"},
+  {"name":  "git", "type":  "tool"},
+  {"name":  "maven", "type":  "technology"},
+  {"name":  "Spring framework", "type":  "technology"},
+  {"name":  "IPS firewall", "type":  "technology"},
+  {"name":  "Windows Administration", "type":  "technology"},
+  {"name":  "Oracle DB Administration", "type":  "technology"}
+]
