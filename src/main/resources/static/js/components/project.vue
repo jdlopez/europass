@@ -21,8 +21,9 @@
       </div>
       <div class="mb-3">
         <label for="description" class="form-label">Description:</label>
-        <textarea v-model="this.localitem.description" id="description" rows="3" ></textarea>
+        <textarea class="form-control" v-model="this.localitem.description" id="description" rows="3" ></textarea>
       </div>
+
       <div class="mb-3">
         <label for="entity" class="form-label">Entity:</label>
         <input class="form-control" v-model="this.localitem.entity" list="list1" id="name" placeholder="Type to search...">

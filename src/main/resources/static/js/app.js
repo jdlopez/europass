@@ -31,8 +31,8 @@ function getList(listName, listHolder) {
 
 // end services
 
-const Home = () => loadModule('/js/components/home.vue', options);
-const Resume = () => loadModule('/js/components/resume.vue', options);
+const Home = () => loadModule('./js/components/home.vue', options);
+const Resume = () => loadModule('./js/components/resume.vue', options);
 
 const About = {template: '<div>About this application ???</div>'}
 

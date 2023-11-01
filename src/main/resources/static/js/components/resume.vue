@@ -167,12 +167,12 @@ function downloadObjectAsJson(exportObj, exportName){
 }
 export default {
   components: {
-    LanguageList: Vue.defineAsyncComponent(() => loadModule('/js/components/language.vue', options)),
-    CertificateList: Vue.defineAsyncComponent(() => loadModule('/js/components/certification.vue', options)),
-    EducationList: Vue.defineAsyncComponent(() => loadModule('/js/components/education.vue', options)),
-    WorkList: Vue.defineAsyncComponent(() => loadModule('/js/components/work.vue', options)),
-    ProjectList: Vue.defineAsyncComponent(() => loadModule('/js/components/project.vue', options)),
-    SkillList: Vue.defineAsyncComponent(() => loadModule('/js/components/skills.vue', options))
+    LanguageList: Vue.defineAsyncComponent(() => loadModule('./js/components/language.vue', options)),
+    CertificateList: Vue.defineAsyncComponent(() => loadModule('./js/components/certification.vue', options)),
+    EducationList: Vue.defineAsyncComponent(() => loadModule('./js/components/education.vue', options)),
+    WorkList: Vue.defineAsyncComponent(() => loadModule('./js/components/work.vue', options)),
+    ProjectList: Vue.defineAsyncComponent(() => loadModule('./js/components/project.vue', options)),
+    SkillList: Vue.defineAsyncComponent(() => loadModule('./js/components/skills.vue', options))
   },
   data () {
     return {
