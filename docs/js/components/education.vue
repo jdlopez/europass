@@ -102,15 +102,14 @@ export default {
   beforeCreate() {
     if (this.modelValue == null)
       this.modelValue = new Array();
-
     axios
-        .get("/js/data/institution.json")
+        .get(services.listInstitution)
         .then(response => (this.listInstitution = response.data));
     axios
-        .get("/js/data/studies-area.json")
+        .get(services.listStudyArea)
         .then(response => (this.listArea = response.data));
     axios
-        .get("/js/data/education-type.json")
+        .get(services.listStudyType)
         .then(response => (this.listStudyType = response.data));
 
   }

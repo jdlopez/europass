@@ -112,13 +112,13 @@ export default {
       this.modelValue = new Array();
 
     axios
-        .get("/js/data/companies.json")
+        .get(servies.listCompanies)
         .then(response => (this.listCompanies = response.data));
     axios
-        .get("/js/data/project-type.json")
+        .get(servies.listProjectType)
         .then(response => (this.listProjectType = response.data));
     axios
-        .get("/js/data/project-roles.json")
+        .get(servies.listProjectRoles)
         .then(response => (this.listRoles = response.data));
 
   }

@@ -81,7 +81,7 @@ export default {
     if (this.modelValue == null)
       this.modelValue = new Array();
     axios
-        .get("/js/data/certificates.json")
+        .get(services.listCertificate)
         .then(response => (this.listCertificate = response.data));
 
   }

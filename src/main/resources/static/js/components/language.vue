@@ -72,14 +72,11 @@ export default {
     }
   },
   beforeCreate() {
-    if (this.modelValue == null)
-      this.modelValue = new Array();
-
     axios
-        .get("/js/data/languages.json")
+        .get(services.listLanguages)
         .then(response => (this.listLanguages = response.data));
     axios
-        .get("/js/data/language-level.json")
+        .get(services.listLanguageLevel)
         .then(response => (this.listLanguageLevel = response.data));
 
   }

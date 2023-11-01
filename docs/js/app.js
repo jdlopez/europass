@@ -22,12 +22,20 @@ const options = {
 // end .vue
 
 // services. first mocked:
-const service_myresume = "/js/data/myresume.json"
-
-function getList(listName, listHolder) {
-    axios.get("/js/data/" + listName + ".json")
-        .then(response => (listHolder = response.data));
-}
+const services = {
+    listCertificate: "./js/data/certificates.json",
+    listInstitution: "./js/data/institution.json",
+    listStudyArea: "./js/data/studies-area.json",
+    listStudyType: "./js/data/education-type.json",
+    listLanguages: "./js/data/languages.json",
+    listLanguageLevel: "./js/data/language-level.json",
+    listCompanies: "./js/data/companies.json",
+    listProjectType: "./js/data/project-type.json",
+    listProjectRoles: "./js/data/project-roles.json",
+    listSkillLevel: "./js/data/skill-level.json",
+    listSkillType: "./js/data/skill-type.json",
+    listSkills: "./js/data/skills.json"
+};
 
 // end services
 

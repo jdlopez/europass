@@ -191,14 +191,6 @@ export default {
   },
   methods: {
 
-    addEducation() {
-      this.resume.education.push(this.dialogs.education);
-      this.dialogs.education = {};
-      this.dialogs.addEducation = false;
-    },
-    removeItemEdu(index) {
-      this.resume.education.splice(index, 1);
-    },
     exportJson() {
       downloadObjectAsJson(this.resume, "my-resume");
     },

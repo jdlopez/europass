@@ -84,15 +84,14 @@ export default {
       this.modelValue = new Array();
 
     axios
-        .get("/js/data/skill-level.json")
+        .get(services.listSkillLevel)
         .then(response => (this.listSkillLevel = response.data));
     axios
-        .get("/js/data/skill-type.json")
+        .get(services.listSkillType)
         .then(response => (this.listSkillType = response.data));
     axios
-        .get("/js/data/skills.json")
+        .get(services.listSkills)
         .then(response => (this.listSkills = response.data));
-
   }
 }
 </script>
