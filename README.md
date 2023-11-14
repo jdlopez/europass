@@ -11,7 +11,7 @@ Europass CV application
 - [ ] Basic REST to handle my own resume
 - [ ] Export/Import EuroPass JsonResume, Manfred AC?
 - [ ] Oauth2 Integration
-- [ ] Checkpoing and rethink: management (muiltiple CVs) HR operation
+- [ ] Checkpoint and rethink: management (muiltiple CVs) HR operation
 
 ## Online Demo
 

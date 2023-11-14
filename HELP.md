@@ -1,29 +1,60 @@
-# Getting Started
+# europass
 
-### Reference Documentation
-For further reference, please consider the following sections:
+This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.5/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.5/gradle-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.5/reference/htmlsingle/index.html#web)
-* [Rest Repositories](https://docs.spring.io/spring-boot/docs/3.1.5/reference/htmlsingle/index.html#howto.data-access.exposing-spring-data-repositories-as-rest)
-* [OAuth2 Client](https://docs.spring.io/spring-boot/docs/3.1.5/reference/htmlsingle/index.html#web.security.oauth2.client)
-* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/3.1.5/reference/htmlsingle/index.html#actuator)
+If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-### Guides
-The following guides illustrate how to use some features concretely:
+## Running the application in dev mode
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing JPA Data with REST](https://spring.io/guides/gs/accessing-data-rest/)
-* [Accessing Neo4j Data with REST](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
-* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
+You can run your application in dev mode that enables live coding using:
+```shell script
+./mvnw compile quarkus:dev
+```
 
-### Additional Links
-These additional references should also help you:
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+## Packaging and running the application
 
+The application can be packaged using:
+```shell script
+./mvnw package
+```
+It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
+Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+
+The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+
+If you want to build an _über-jar_, execute the following command:
+```shell script
+./mvnw package -Dquarkus.package.type=uber-jar
+```
+
+The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+
+## Creating a native executable
+
+You can create a native executable using: 
+```shell script
+./mvnw package -Dnative
+```
+
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+```shell script
+./mvnw package -Dnative -Dquarkus.native.container-build=true
+```
+
+You can then execute your native executable with: `./target/europass-1.0.0-SNAPSHOT-runner`
+
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+
+## Related Guides
+
+- RESTEasy Classic ([guide](https://quarkus.io/guides/resteasy)): REST endpoint framework implementing Jakarta REST and more
+
+## Provided Code
+
+### RESTEasy JAX-RS
+
+Easily start your RESTful Web Services
+
+[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
